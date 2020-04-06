@@ -62,7 +62,12 @@ public class CountryCoronaService {
 			
 			
 			if (countryInformation.select("th img").size() == 1) {
-				corona.setImage(countryInformation.select("th img").get(0).attr("src"));
+				String imageUrl = countryInformation.select("th img").get(0).attr("src");
+				int indexPx = imageUrl.indexOf("px-");
+				if(indexPx != -1 && indexPx > 2) {
+					imageUrl = imageUrl.substring(0, indexPx - 2) + "1080" + imageUrl.substring(indexPx); 
+				}
+				corona.setImage(imageUrl);
 			}
 			if (countryInformation.select("td").size() >= 3) {
 				int[] valuesInformation = new int[3];
