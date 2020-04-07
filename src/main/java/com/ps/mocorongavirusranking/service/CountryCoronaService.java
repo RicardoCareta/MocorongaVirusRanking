@@ -1,4 +1,6 @@
-package com.ps.mocoronavirusapi.service;
+package com.ps.mocorongavirusranking.service;
+
+import static com.ps.mocorongavirusranking.util.IntegerValidation.isInt;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,9 +16,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
 
-import com.ps.mocoronavirusapi.model.CountryCorona;
-
-import static com.ps.mocoronavirusapi.util.IntegerValidation.isInt;
+import com.ps.mocorongavirusranking.model.CountryCorona;
 
 @Service
 public class CountryCoronaService {
@@ -82,7 +82,7 @@ public class CountryCoronaService {
 					valuesInformation[valueIndex] = Integer.parseInt(information);
 				}
 
-				corona.setCauses(valuesInformation[0]);
+				corona.setCases(valuesInformation[0]);
 				corona.setDeaths(valuesInformation[1]);
 				corona.setRecoveries(valuesInformation[2]);
 			}

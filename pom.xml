@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ps</groupId>
-	<artifactId>mocoronavirusapi</artifactId>
+	<artifactId>mocorongavirusranking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mocoronavirusapi</name>
+	<name>mocorongavirusranking</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

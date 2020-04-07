@@ -1,4 +1,4 @@
-package com.ps.mocoronavirusapi.model;
+package com.ps.mocorongavirusranking.model;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class CountryCorona {
 	
 	private String country;
-	private int causes;
+	private int cases;
 	private int deaths;
 	private int recoveries;
 	@JsonIgnore
@@ -17,8 +17,8 @@ public class CountryCorona {
 	public String getCountry() {
 		return country;
 	}
-	public int getCauses() {
-		return causes;
+	public int getCases() {
+		return cases;
 	}
 	public int getDeaths() {
 		return deaths;
@@ -35,8 +35,8 @@ public class CountryCorona {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public void setCauses(int causes) {
-		this.causes = causes;
+	public void setCases(int cases) {
+		this.cases = cases;
 	}
 	public void setDeaths(int deaths) {
 		this.deaths = deaths;

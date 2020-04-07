@@ -1,4 +1,4 @@
-package com.ps.mocoronavirusapi.controller;
+package com.ps.mocorongavirusranking.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.ps.mocoronavirusapi.service.CountryCoronaService;
+import com.ps.mocorongavirusranking.service.CountryCoronaService;
 
 @Controller
 public class CountryCoronaController {

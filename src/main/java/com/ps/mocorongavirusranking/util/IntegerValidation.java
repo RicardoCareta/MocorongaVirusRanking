@@ -1,4 +1,4 @@
-package com.ps.mocoronavirusapi.util;
+package com.ps.mocorongavirusranking.util;
 
 public class IntegerValidation {
 	public static boolean isInt(String possibleInt) {
